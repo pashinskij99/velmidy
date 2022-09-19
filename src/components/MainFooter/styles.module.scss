@@ -1,0 +1,116 @@
+.footer {
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  .button_hidden {
+    z-index: 4000;
+  }
+  .btnPlayMusicWrapper {
+    z-index: 6000;
+    .btnPlayMusic {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #002E6D;
+      border: none;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      img {
+        transform: translateX(5px);
+        width: 25.5px;
+      }
+    }
+  }
+  .footerNav {
+    margin-left: 0;
+    margin-bottom: 3.25rem;
+    z-index: 100;
+    .containerForSvg {
+      object {
+        width: 100%;
+      }
+    }
+
+    .footerList {
+      font-family: Seravek;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #002E6D;
+      position: relative;
+      list-style: none;
+      filter: drop-shadow(-5px -5px 10px #FFFFFF) drop-shadow(5px 5px 10px #C7CDD7);
+      img {
+        margin: 0 5px;
+      }
+      .footerItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 13px;
+        &:first-child {
+          border-radius: 15px 0px 0px 15px;
+        }
+        &:nth-child(6) {
+          flex-direction: column;
+          line-height: 0.8em;
+          border-radius: 0 15px 15px 0;
+          border: none;
+        }
+        &:nth-child(7) {
+          top: -85px;
+          right: 220px;
+          position: absolute;
+          border-radius: 15px;
+          border: none;
+          &:before {
+            content: '';
+            position: absolute;
+            height: 69px;
+            width: 65px;
+            left: 0;
+            top: 0;
+            background: url('img/Component_1.svg')no-repeat center center;
+            transform: translateX(-110%) translateY(50%);
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            height: 69px;
+            width: 145px;
+            right: 0;
+            top: 0;
+            background: url('img/Component_2.svg')no-repeat center center;
+            transform: translateX(110%) translateY(50%);
+          }
+        }
+        &:last-child {
+          border-radius: 15px;
+          border: none;
+        }
+        background: #EFEFEF;
+        border-right: 3px solid #D8D8D8;
+        height: 51.11px;
+        box-sizing: border-box;
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

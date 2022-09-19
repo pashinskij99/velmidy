@@ -1,0 +1,21 @@
+.btnPlayMusicWrapper {
+  position: fixed;
+  left: 25px;
+  bottom: 50px;
+  z-index: 6000;
+  .btnPlayMusic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #002E6D;
+      ;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    img {
+      transform: translateX(5px);
+      width: 25.5px;
+    }
+  }
+}

@@ -1,0 +1,358 @@
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek-Bold.woff2') format('woff2'),
+  url('./fonts/Seravek-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek.woff2') format('woff2'),
+  url('./fonts/Seravek.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek-Medium.woff2') format('woff2'),
+  url('./fonts/Seravek-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek-Italic.woff2') format('woff2'),
+  url('./fonts/Seravek-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek-BoldItalic.woff2') format('woff2'),
+  url('./fonts/Seravek-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek-Bold.woff2') format('woff2'),
+  url('./fonts/Seravek-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek-ExtraLightItalic.woff2') format('woff2'),
+  url('./fonts/Seravek-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek.woff2') format('woff2'),
+  url('./fonts/Seravek.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek-ExtraLight.woff2') format('woff2'),
+  url('./fonts/Seravek-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek-Light.woff2') format('woff2'),
+  url('./fonts/Seravek-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek-Italic.woff2') format('woff2'),
+  url('./fonts/Seravek-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek-LightItalic.woff2') format('woff2'),
+  url('./fonts/Seravek-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek-Medium.woff2') format('woff2'),
+  url('./fonts/Seravek-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./fonts/Seravek-MediumItalic.woff2') format('woff2'),
+  url('./fonts/Seravek-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --yellow: #F5C400;
+  --blue: #002E6D;
+  --teal: #00ACC8;
+  --gray-1: #5C5B5B;
+  --gray-2: #969899;
+  --custom-gray: #EFEFEF;
+  --custom-gray-2: #D8D8D8;
+  --light-blue: #14AFE6;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #EFEFEF;
+}
+
+.tutorial-on * {
+  pointer-events: none;
+  touch-action: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 1vw;
+}
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.main-nav-btn {
+  font-family: Seravek, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #002E6D;
+  padding: 0 35px;
+  height: 65px;
+  border: none;
+  border-radius: 15px;
+  max-width: 300px;
+}
+
+.main-nav-btn-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-sizing: inherit;
+  z-index: 100000;
+}
+
+.main-nav-btn-info.active {
+  background: #00ACC8;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.main-nav-btn-info.active img {
+  width: 100%;
+}
+
+.dg.ac {
+  z-index: 9999
+}
+
+.openglWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#gradientHolder canvas {
+   z-index: 1;
+}
+
+.tutorial-on .tutorial {
+  position: relative;
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*pointer-events: none;*/
+  /*touch-action: none;*/
+}
+
+.tutorial-on .tutorial-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.header-tutorial {
+  display: none;
+}
+
+.tutorial-on .header-tutorial {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: -0.1rem;
+}
+
+.tutorial-on .tutorial:before {
+  content: attr(data-tooltip);
+  position: absolute;
+  text-align: start;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.36);
+  border-radius: 20px;
+  padding: 2rem;
+
+  font-family: 'Seravek', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.35rem;
+  line-height: 2rem;
+  z-index: 1000;
+  color: #4E5457;
+}
+
+.tutorial-on .tutorial:after {
+  content: '';
+  position: absolute;
+  background: url("assets/icons/svg/cube.svg")no-repeat center / cover;
+  height: 3rem;
+  width: 3rem;
+  z-index: 1000;
+}
+
+.tutorial-on .tutorial-left-button:before {
+  content: 'В этом разделе вы можете посмотреть на изменения печени на клеточном уровне';
+  top: 0;
+  left: 11rem;
+  width: 22rem;
+}
+.tutorial-on .tutorial-left-button:after {
+  left: 10rem;
+  top: 2rem;
+}
+
+.tutorial-on .tutorial-profile:before {
+  top: -1rem;
+  right: 7.5rem;
+  width: 24rem;
+}
+.tutorial-on .tutorial-profile:after {
+  right: 6.5rem;
+  top: 1rem;
+}
+
+.tutorial-on .tutorial-right-buttons:before {
+  content: 'Подробнее об исследованиях';
+  right: 0rem;
+  left: 0;
+  margin: 0 auto;
+  bottom: -7rem;
+  text-align: center;
+}
+.tutorial-on .tutorial-right-buttons:after {
+  right: 0rem;
+  left: 0;
+  margin: 0 auto;
+  bottom: -3rem;
+}
+
+.tutorial-on .tutorial-footer-button:before {
+  content: 'Используйте навигационное меню для передвижения по стадиям';
+  bottom: 7rem;
+  left: 6rem;
+  width: 27rem;
+}
+
+.tutorial-on .tutorial-footer-button:after {
+  bottom: 6rem;
+  left: 8rem;
+}
+
+.tutorial-on .tutorial-start:before {
+  content: 'Повторно открыть обучение';
+  right: 0;
+  bottom: 8rem;
+  width: 25rem;
+  z-index: 1000;
+  text-align: center;
+}
+
+.tutorial-on .tutorial-start:after {
+  right: 1rem;
+  bottom: 7rem;
+
+}
+
+.tutorial-on .tutorial-micro:before {
+  content: 'Микропрепарат печени';
+  right: 21rem;
+  top: 4rem;
+  width: 15rem;
+  text-align: left;
+}
+
+.tutorial-on .tutorial-micro:after {
+  top: 6.5rem;
+  right: 20rem;
+}
+
+.tutorial-on #footer-items #footer-item-wrapper {
+  background-color: #ffffff;
+}
+.tutorial-on #footer-items #footer-item-wrapper #border-block {
+  background-color: #ffffff;
+}
+
+.tutorial-on #footer-items:nth-child(1) #footer-item-wrapper {
+  background-color: #D3ECF2;
+}
+.tutorial-on #footer-items:nth-child(1) #footer-item-wrapper #border-block {
+  background-color: #1F3266;
+}
